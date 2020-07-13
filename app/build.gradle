@@ -42,10 +42,10 @@ dependencies {
 
 
     //基础组件库依赖(必须)
-    implementation 'com.umeng.umsdk:common:9.1.0'
-    implementation 'com.umeng.umsdk:utdid:1.5.2'
-    implementation  'com.umeng.umsdk:asms:1.1.3'
-    implementation 'com.umeng.umsdk:crash:0.0.4'
+    api 'com.umeng.umsdk:common:9.1.0'
+    api 'com.umeng.umsdk:utdid:1.5.2'
+    api  'com.umeng.umsdk:asms:1.1.3'
+    api 'com.umeng.umsdk:crash:0.0.4'
     //友盟push相关依赖(必须)
     implementation 'com.umeng.umsdk:push:6.1.0'
     implementation 'com.umeng.umsdk:alicloud-httpdns:1.2.5'
@@ -57,11 +57,11 @@ dependencies {
     implementation 'com.umeng.umsdk:agoo_tnet4android:3.1.14.9'
 
     //社会化分享
-    implementation  'com.umeng.umsdk:share-core:7.0.2'
-    implementation  'com.umeng.umsdk:share-board:7.0.2'
-    implementation  'com.umeng.umsdk:share-qq:7.0.2'
-    implementation  'com.umeng.umsdk:share-wx:7.0.2'
-    implementation  'com.umeng.umsdk:share-sina:7.0.2'
-    implementation  'com.umeng.umsdk:share-alipay:7.0.2'
-    implementation  'com.umeng.umsdk:share-dingding:7.0.2'
+    api  'com.umeng.umsdk:share-core:7.0.2'
+    api  'com.umeng.umsdk:share-board:7.0.2'
+    api  'com.umeng.umsdk:share-qq:7.0.2'
+    api  'com.umeng.umsdk:share-wx:7.0.2'
+    api  'com.umeng.umsdk:share-sina:7.0.2'
+    api  'com.umeng.umsdk:share-alipay:7.0.2'
+    api  'com.umeng.umsdk:share-dingding:7.0.2'
 }

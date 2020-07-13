@@ -15,7 +15,7 @@ import java.util.Map;
  * @Descaption
  */
 public class UmThirdLogin {
-    void thirdPartLogin(Activity activity, SHARE_MEDIA platform, UMAuthListener authListener) {
+   public static void thirdPartLogin(Activity activity, SHARE_MEDIA platform, UMAuthListener authListener) {
         UMShareAPI.get(activity).getPlatformInfo(activity, platform, authListener);
     }
 }
