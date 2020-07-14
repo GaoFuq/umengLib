@@ -23,6 +23,10 @@ public class WXEntryActivity extends WXCallbackActivity{}
     implementation 'com.xgr.easypay:wechatpay:2.0.5'
     implementation 'com.xgr.easypay:alipay:2.0.5'
     implementation 'com.xgr.easypay:unionpay:2.0.5'//银联
+
+    implementation ('com.xgr.easypay:wechatpay:2.0.5'){
+            exclude group:'com.tencent.mm.opensdk'//和友盟的微信share冲突时
+    }
 //微信支付
 package com.your.package.wxapi;
 import com.xgr.wechatpay.activity.WXPayActivity;
