@@ -180,4 +180,27 @@ public class UmThirdPartLoginBean {
     public void setRefreshToken(String refreshToken) {
         this.refreshToken = refreshToken;
     }
+
+    @Override
+    public String toString() {
+        return "UmThirdPartLoginBean{" +
+                "country='" + country + '\'' +
+                ", unionid='" + unionid + '\'' +
+                ", gender='" + gender + '\'' +
+                ", city='" + city + '\'' +
+                ", openid='" + openid + '\'' +
+                ", language='" + language + '\'' +
+                ", profile_image_url='" + profile_image_url + '\'' +
+                ", accessToken='" + accessToken + '\'' +
+                ", access_token='" + access_token + '\'' +
+                ", uid='" + uid + '\'' +
+                ", province='" + province + '\'' +
+                ", screen_name='" + screen_name + '\'' +
+                ", name='" + name + '\'' +
+                ", iconurl='" + iconurl + '\'' +
+                ", expiration='" + expiration + '\'' +
+                ", expires_in='" + expires_in + '\'' +
+                ", refreshToken='" + refreshToken + '\'' +
+                '}';
+    }
 }
