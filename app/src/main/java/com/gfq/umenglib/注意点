@@ -1,0 +1,32 @@
+注意：
+
+//用于微信第三方登录
+package com.your.package.wxapi;
+import com.umeng.socialize.weixin.view.WXCallbackActivity;
+public class WXEntryActivity extends WXCallbackActivity{}
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:taskAffinity="com.your.package"
+            android:launchMode="singleTask">
+        </activity>
+
+
+
+
+  //支付
+    implementation 'com.xgr.easypay:EasyPay:2.0.5'
+    implementation 'com.xgr.easypay:wechatpay:2.0.5'
+    implementation 'com.xgr.easypay:alipay:2.0.5'
+    implementation 'com.xgr.easypay:unionpay:2.0.5'//银联
+//微信支付
+package com.your.package.wxapi;
+import com.xgr.wechatpay.activity.WXPayActivity;
+public class WXPayEntryActivity extends WXPayActivity {}
+
+         <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>

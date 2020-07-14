@@ -10,7 +10,8 @@ import com.umeng.message.PushAgent;
 /**
  * @created GaoFuq
  * @Date 2020/7/13 11:51
- * @Descaption
+ * @Descaption  分享的代码 建议使用友盟官方代码。
+ * https://developer.umeng.com/docs/128606/detail/129622?acm=lb-zebra-609113-7807334.1003.4.7263708&scm=1003.4.lb-zebra-609113-7807334.OTHER_15782620770131_7263708#h2-u5206u4EAB17
  */
 public class UmengLib {
     private static final String TAG = "UmengLib";
