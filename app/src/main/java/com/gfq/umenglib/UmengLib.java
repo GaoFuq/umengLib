@@ -15,24 +15,11 @@ import com.umeng.message.PushAgent;
  */
 public class UmengLib {
     private static final String TAG = "UmengLib";
-
-    private static class SingletonClassInstance {
-        private static final UmengLib instance = new UmengLib();
-    }
-
-    private UmengLib() {
-    }
-
-    public static UmengLib getInstance() {
-        return SingletonClassInstance.instance;
-    }
-
-
-    public void init(Context appContext, String appKey, String Umeng_Message_Secret) {
+    public static void init(Context appContext, String appKey, String Umeng_Message_Secret) {
         UMConfigure.init(appContext, appKey, "Umeng", UMConfigure.DEVICE_TYPE_PHONE, Umeng_Message_Secret);
-//获取消息推送代理示例
+        //获取消息推送代理示例
         PushAgent mPushAgent = PushAgent.getInstance(appContext);
-//        mPushAgent.setNotificationPlaySound(MsgConstant.NOTIFICATION_PLAY_SERVER); //服务端控制声音
+        //mPushAgent.setNotificationPlaySound(MsgConstant.NOTIFICATION_PLAY_SERVER); //服务端控制声音
         //注册推送服务，每次调用register方法都会回调该接口
         mPushAgent.register(new IUmengRegisterCallback() {
             @Override

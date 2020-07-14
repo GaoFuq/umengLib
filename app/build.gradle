@@ -39,6 +39,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.google.code.gson:gson:2.8.5'
 
 
     //基础组件库依赖(必须)
@@ -60,7 +61,9 @@ dependencies {
     api  'com.umeng.umsdk:share-core:7.0.2'
     api  'com.umeng.umsdk:share-board:7.0.2'
 //    api  'com.umeng.umsdk:share-qq:7.0.2'
-    api  'com.umeng.umsdk:share-wx:7.0.2'
+    api  ('com.umeng.umsdk:share-wx:7.0.2'){
+        exclude group:'com.tencent.mm.opensdk'
+    }
 //    api  'com.umeng.umsdk:share-sina:7.0.2'
     api  'com.umeng.umsdk:share-alipay:7.0.2'
 //    api  'com.umeng.umsdk:share-dingding:7.0.2'

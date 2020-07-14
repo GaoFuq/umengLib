@@ -13,8 +13,10 @@ public class WXEntryActivity extends WXCallbackActivity{}
             android:launchMode="singleTask">
         </activity>
 
+ UmengLib.getInstance().init(this,Constants.UMENG_APP_ID,Constants.UMENG_MESSAGE_SECRET);
+ PlatformConfig.setWeixin(Constants.WEIXIN_APP_ID, Constants.WEIXIN_APP_SECRET);
 
-
+---------------------------------------------------------------------
 
   //支付
     implementation 'com.xgr.easypay:EasyPay:2.0.5'
